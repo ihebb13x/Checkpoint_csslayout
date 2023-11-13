@@ -1,0 +1,194 @@
+body{
+    padding: 0px 150px 50px 150px;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 10px; /* Ajouter une marge entre les éléments li */
+    
+    font-size: 18px; /* Exemple : taille de la police */
+    color: #747474;/* Exemple : couleur du texte */
+}
+/*for the liste inside departments*/
+li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #747474;
+    position: relative;
+}
+
+ul ul {
+    display: none; /*hidden the elemnt inside */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+li:hover > ul {
+    display: block; /*pour afficher le element sous le department*/
+}
+
+ul li:hover{
+    color: #00ccb1; /*changer le coleur lorsque le souris passer sur le element*/
+    cursor: pointer; /*le cursor sera un pointer*/
+}
+
+/*pour modifier le image dans meme ligne que le <h1>*/
+
+img {
+    display: inline-block;
+    vertical-align: middle; /* Aligner l'image verticalement au milieu du texte */
+}
+
+.h1title {
+    display: inline-block;
+    margin-left: 10px; /* Ajouter une marge à gauche pour l'espace entre l'image et le texte */
+}
+
+#image_main{
+    width: 50px;
+    vertical-align: middle;
+    position: absolute; 
+            bottom: 70%;
+            right: 50%;
+
+}
+
+ p{
+    display: inline-block; /*sur meme ligne*/
+    color: #747474;
+    padding-left: 50px;
+}
+
+/*ca pour l'element box*/
+.col1{
+    background-color: #00ccb1;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    justify-content: space-between;
+    height: 280px;
+    width: 30%;
+    color: #fff;
+}
+
+.col2{
+    background-color: #3d83df;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    justify-content: space-around;
+    height: 280px;
+    width: 30%;
+    color: #fff;
+}
+
+.col3{
+    background-color: #1b2734;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    justify-content: space-between;
+    height: 280px;
+    width: 30%;
+    color: #fff;
+}
+
+
+.all_col {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /*text-align: center;*/
+}
+
+.all_col div {
+    margin: 0 10px;
+}
+
+
+/*pour le nom de pays*/
+select {
+    border: none; /*suprimer le border*/
+    outline: none; /* Removes the outline when the select element is focused */
+    color: #fff;
+    text-decoration: underline; /*ajouter ligne sous le select*/
+}
+
+/*cele paragraphe sous le 3col*/
+pre{
+    padding:15px 0px 0px 50px;
+    font-weight: 300;
+    padding-right: 1em;
+    color: #00b39b;
+    font-family: Work Sans, Arial, sans-serif;
+    letter-spacing: -0.3px;
+}
+
+
+.section4{
+    display: flex;
+    margin-top: 55px;
+    background-color: #d0faf4;
+    height: 450px;
+    flex-direction: row; /*bch rj3t el p fi str jdid*/
+
+}
+.img_section4{
+    
+    width: 40%;
+    height: 40%;
+    /*
+    position: relative;
+    left: -45%; 
+    bottom:-30%;*/
+}
+
+.section4 .section4fourparts div{
+    display: inline-block;
+}
+.section4  .section4fourparts .first2 #leader{
+    background-color: #fff;
+    width: 40%;
+    height: 200px;
+    
+}
+.section4  .section4fourparts .first2 #patients{
+    background-color: #fff;
+    width: 25%;
+    height: 200px;
+    margin-top: 8px;
+}
+
+.section4  .section4fourparts .second2 #appointments{
+    background-color: #fff;
+    width: 30%;
+    height: 200px;
+    margin-top: 8px;
+}
+
+.section4  .section4fourparts .second2 #doctors{
+    background-color: #fff;
+    width: 30%;
+    margin-top: 8px;
+}
+
+
+.section5 h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+
+.section6 button{
+    background-color: #3d83df;
+    border: #3d83df;
+    color: #fff;
+}
